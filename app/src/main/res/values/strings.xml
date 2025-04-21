@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CyberStore</string>
+    <string name="total_amount_text">Общая сумма: 0 KZT</string>
+    <string name="checkout_button_text">Оформить заказ</string>
+    <string name="delete_button_text">Удалить</string>
+    <string name="select_for_deletion">Выбрать для удаления</string>
+</resources>

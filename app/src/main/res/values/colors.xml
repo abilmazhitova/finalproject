@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета интерфейса -->
+    <color name="background_black">#41424C</color> <!-- Тёмно-серый фон -->
+    <color name="background_block">#474A51</color> <!-- для ячеек-->
+    <color name="text_silver">#E0E0E0</color> <!-- Серебристый текст -->
+    <color name="text_white">#FFFFFF</color> <!-- Белый текст -->
+    <color name="accent_red">#B00020</color> <!-- Красный акцент -->
+    <color name="button_dark">#2C2C2C</color> <!-- Тёмная кнопка -->
+    <color name="menu">#BBBBBB</color><!-- для менюшки -->
+    <!-- Кнопки -->
+    <color name="button_red">#B00020</color>
+    <color name="button_gray">#2C2C2C</color>
+
+    <!-- Цвета навигации -->
+    <color name="nav_background">#8B0000</color>
+    <color name="nav_icon_color">#FFFFFF</color>
+    <color name="nav_text_color">#FFFFFF</color>
+
+    <!-- Остальные стандартные -->
+    <color name="grey">#4f535b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
