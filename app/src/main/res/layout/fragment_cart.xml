@@ -26,7 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Оформить заказ"
-        android:backgroundTint="#E53935"
-        android:textColor="#FFFFFF"/>
+        android:backgroundTint="@color/accent_red"
+        android:textColor="@color/text_silver"
+        />
 
 </LinearLayout>
