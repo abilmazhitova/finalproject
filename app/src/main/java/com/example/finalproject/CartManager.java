@@ -2,6 +2,7 @@ package com.example.finalproject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 public class CartManager {
     private static List<CartItem> cart = new ArrayList<>();
@@ -33,7 +34,18 @@ public class CartManager {
         return total;
     }
 
-    // Очистить корзину
+    // Очистить корзину (удалить только выбранные товары)
+    public static void clearSelectedItems() {
+        Iterator<CartItem> iterator = cart.iterator();
+        while (iterator.hasNext()) {
+            CartItem item = iterator.next();
+            if (item.isSelected()) {  // Проверка на выбранный товар
+                iterator.remove();  // Удаляем выбранный товар
+            }
+        }
+    }
+
+    // Очистить всю корзину
     public static void clearCart() {
         cart.clear();
     }

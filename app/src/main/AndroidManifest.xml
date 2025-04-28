@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.finalproject">
 
+    <!-- Разрешение на уведомления для Android 13 и выше -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Finalproject"
         tools:targetApi="31">
+
+        <!-- Сервис для уведомлений -->
+        <service android:name=".OrderNotificationService"/>
 
         <!-- Главная активность -->
         <activity
@@ -27,6 +33,12 @@
         <!-- Активность для логина -->
         <activity
             android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+
+        <!-- Активность для заказов (добавлена) -->
+        <activity
+            android:name=".OrdersActivity"
             android:exported="true">
         </activity>
 

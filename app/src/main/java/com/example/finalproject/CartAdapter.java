@@ -39,6 +39,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         holder.quantity.setText("Кол-во: " + cartItem.getQuantity());
         holder.total.setText("Итого: " + (cartItem.getPrice() * cartItem.getQuantity()) + " KZT");
         Glide.with(context).load(cartItem.getImg()).into(holder.image);
+
+        // Устанавливаем слушатель на CheckBox
+        holder.select.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            cartItem.setSelected(isChecked);
+        });
     }
 
     @Override
@@ -62,3 +67,4 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         }
     }
 }
+

@@ -9,13 +9,12 @@
     android:gravity="center_vertical"
     android:elevation="5dp">
 
-    <!-- Увеличиваем размер изображения товара -->
     <ImageView
-        android:id="@+id/cart_item_image"
+        android:id="@+id/order_image"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:scaleType="centerCrop"
-        android:layout_marginEnd="16dp" />
+        android:layout_marginEnd="16dp"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -24,51 +23,35 @@
         android:orientation="vertical"
         android:paddingEnd="8dp">
 
-        <!-- Увеличиваем шрифт названия товара -->
         <TextView
-            android:id="@+id/cart_item_name"
+            android:id="@+id/order_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Название товара"
             android:textColor="@color/text_white"
             android:textSize="18sp"
             android:textStyle="bold"
             android:maxLines="2"
             android:ellipsize="end" />
 
-        <!-- Увеличиваем шрифт цены -->
         <TextView
-            android:id="@+id/cart_item_price"
+            android:id="@+id/order_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Цена: 5990 KZT"
+            android:textColor="@color/text_silver"
+            android:textSize="16sp"  />
+
+        <TextView
+            android:id="@+id/order_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="@color/text_silver"
             android:textSize="16sp" />
 
-        <!-- Увеличиваем шрифт количества -->
         <TextView
-            android:id="@+id/cart_item_quantity"
+            android:id="@+id/order_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Кол-во: 1"
-            android:textColor="@color/text_silver"
-            android:textSize="16sp" />
-
-        <!-- Увеличиваем шрифт итоговой суммы -->
-        <TextView
-            android:id="@+id/cart_item_total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Итого: 5990 KZT"
             android:textColor="@color/text_silver"
             android:textSize="16sp" />
     </LinearLayout>
-
-    <!-- Увеличиваем размер чекбокса -->
-    <CheckBox
-        android:id="@+id/cart_item_select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/accent_red"
-        android:layout_marginStart="10dp" />
 </LinearLayout>

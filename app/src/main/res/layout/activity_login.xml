@@ -4,7 +4,9 @@
     android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/background_black"
+    >
 
     <!-- Имя -->
     <EditText
@@ -16,7 +18,9 @@
         android:padding="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_silver"
+        />
 
     <!-- Телефон -->
     <EditText
@@ -62,7 +66,11 @@
         android:text="Войти"
         app:layout_constraintTop_toBottomOf="@id/password_input"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/button_red"
+        android:textColor="@color/text_silver"
+        />
 
     <!-- Кнопка регистрации -->
     <Button
@@ -72,6 +80,10 @@
         android:text="Зарегистрироваться"
         app:layout_constraintTop_toBottomOf="@id/login_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/button_red"
+        android:textColor="@color/text_silver"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
